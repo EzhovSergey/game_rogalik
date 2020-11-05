@@ -1,0 +1,15 @@
+"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -G "CodeBlocks - MinGW Makefiles" D:\Study\programming\c++.project
+-- 64 bit system detected.
+CMake Warning (dev) at C:/Program Files/JetBrains/CLion 2020.2.4/bin/cmake/win/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (BLT) does
+  not match the name of the calling package (BearLibTerminal).  This can lead
+  to problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  CMake/FindBearLibTerminal.cmake:52 (find_package_handle_standard_args)
+  CMakeLists.txt:8 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Study/programming/c++.project/cmake-build-default-mingw

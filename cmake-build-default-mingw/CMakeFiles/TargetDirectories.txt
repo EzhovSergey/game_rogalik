@@ -1,0 +1,3 @@
+D:/Study/programming/c++.project/cmake-build-default-mingw/CMakeFiles/c___project.dir
+D:/Study/programming/c++.project/cmake-build-default-mingw/CMakeFiles/edit_cache.dir
+D:/Study/programming/c++.project/cmake-build-default-mingw/CMakeFiles/rebuild_cache.dir
