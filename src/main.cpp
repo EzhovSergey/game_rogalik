@@ -1,14 +1,31 @@
 #include <BearLibTerminal.h>
-#include <iostream>
+#include " functions_cpp/Player.cpp"
+#include " functions_cpp/Controls.cpp"
+#include " functions_cpp/Interface.cpp"
 
 int main() {
     terminal_open();
 
-    // Выводим текст
-    terminal_printf(1, 10, "Hello World!");
-    terminal_refresh();
-    // Ждем, пока пользователь не закроет окно
-    while (terminal_read() != TK_CLOSE);
+    Window window;
+    Player player;
+    Controls controls;
+    Interface interface(window, player, controls);
 
-    terminal_close();
+    terminal_refresh();
+
+    player.drawPlayer();
+    terminal_refresh();
+
+    while (true) {
+        terminal_clear();
+
+        controls.update();
+
+        if(controls.isExit()) break;
+
+        interface.movePlayer();
+        player.drawPlayer();
+
+        terminal_refresh();
+    }
  }
